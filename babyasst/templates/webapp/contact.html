@@ -1,0 +1,28 @@
+
+{% extends 'webapp/base.html' %}
+{% load static %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block metadesc %}Let up know what is on your mind{% endblock %}
+
+{% block headertitle %}Contact Us{% endblock %}
+{% block headersubtitle %}Tell us what on your mind{% endblock %}
+
+{% block content %}
+
+<form action="mailto:support@babyasst.com">
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" class="form-control" name="subject" id="subject">
+  </div>
+  <div class="form-group">
+    <label for="body">Message</label>
+    <textarea name="body" id="body" class="form-control" cols="30" rows="10"></textarea>
+  </div>
+  <div class="form-group">
+    <input type="submit" class="btn btn-primary btn-lg" value="Send">
+  </div>
+</form>
+
+{% endblock %}

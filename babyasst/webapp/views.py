@@ -63,6 +63,20 @@ class AboutView(View):
         return render(request, 'webapp/about.html')
 
 
+class FAQsView(View):
+    def get(self, request):
+        return render(request, 'webapp/faqs.html')
+
+
+class VideoTutsView(View):
+    def get(self, request):
+        return render(request, 'webapp/video_tuts.html')
+
+
+class ContactView(View):
+    def get(self, request):
+        return render(request, 'webapp/contact.html')
+
 class PrivacyView(View):
     def get(self, request):
         return render(request, 'webapp/privacy.html')

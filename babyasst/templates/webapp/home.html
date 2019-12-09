@@ -87,7 +87,7 @@
         <div class="header-inner container">
           <!--branding/logo -->
           <div class="header-brand">
-            <a class="header-brand-text text-light" href="https://babyasst.com" title="Baby Asst Home">
+            <a class="header-brand-text text-light" href="{% url 'home' %}" title="Baby Asst Home">
               <h2 class="h3 my-0 font-weight-normal">
                 <span class="font-weight-bold">Baby </span>Asst
               </h2>
@@ -108,6 +108,9 @@
                 <li class="nav-item"></li>
                 <li class="nav-item">
                   <a href="{% url 'about' %}" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="About">About</span> </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{% url 'contact' %}" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="Contact">Contact Us</span> </a>
                 </li>
                 {% comment %}
                 <li class="nav-item">
@@ -222,10 +225,16 @@
             <i class="fa fa-check mr-2"></i>Sleep
           </li>
           <li class="list-inline-item m-2">
+            <i class="fa fa-check mr-2"></i>Temperatures
+          </li>
+          <li class="list-inline-item m-2">
             <i class="fa fa-check mr-2"></i>Timers
           </li>
           <li class="list-inline-item m-2">
             <i class="fa fa-check mr-2"></i>Tummy Time
+          </li>
+          <li class="list-inline-item m-2">
+            <i class="fa fa-check mr-2"></i>Weight
           </li>
           <li class="list-inline-item m-2">
             <i class="fa fa-check mr-2"></i>Looks Great on Any Device
@@ -390,6 +399,34 @@
         <!-- /row -->
       </div>
     </div>
+
+  <!-- ======== @Region: #content-below ======== -->
+  <div id="content-below">
+    <!-- Awesome features call to action -->
+    <div class="bg-success bg-op-9 text-white py-4">
+      <div class="container">
+        <div class="row text-center text-lg-left align-items-lg-center">
+          <div class="col-12 col-lg-7 text-white">
+            <h3 class="font-weight-bold my-0 text-uppercase">
+              Awesome Features
+            </h3>
+            <p class="font-weight-normal op-9 my-0">
+              <i class="ion-android-checkmark-circle"></i> Easy to Use
+              <i class="ion-android-checkmark-circle ml-lg-3"></i> Low Nightglare
+              <i class="ion-android-checkmark-circle ml-lg-3"></i> Convienent
+              <i class="ion-android-checkmark-circle ml-lg-3"></i> Insightful
+            </p>
+          </div>
+          <div class="col-12 col-lg-5 py-2 text-lg-right">
+            <a href="https://app.babyasst.com/signup/" class="btn btn-xlg btn-white btn-rounded shadow-lg bg-light bg-op-8 bg-hover-white">Get Baby Asst<i class="fa fa-arrow-right ml-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   </div>
   <!-- #Content -->
 
@@ -431,13 +468,12 @@
               Support
             </h5>
             <ul class="list-unstyled text-sm">
-              <li> <a href="" class="text-white op-6 py-1 d-inline-block">Video Tutorials</a> </li>
-              <li> <a href="" class="text-white op-6 py-1 d-inline-block">FAQs</a> </li>
-              <li> <a href="" class="text-white op-6 py-1 d-inline-block">Contact Us</a> </li>
+              <li> <a href="{% url 'video_tuts' %}" class="text-white op-6 py-1 d-inline-block">Video Tutorials</a> </li>
+              <li> <a href="{% url 'faqs' %}" class="text-white op-6 py-1 d-inline-block">FAQs</a> </li>
+              <li> <a href="{% url 'contact' %}" class="text-white op-6 py-1 d-inline-block">Contact Us</a> </li>
             </ul>
           </div>
         </div>
-
 
         <div class="col-lg-4">
           <h5 class="text-uppercase text-white">
@@ -451,10 +487,11 @@
             <button type="submit" class="btn btn-primary btn-rounded py-2 px-3 font-weight-bold text-uppercase"> Subscribe </button>
           </form>
           <div class="mt-4">
-            <a href="#" class="btn btn-outline-light btn-rounded btn-icon btn-lg border-w-2 branding-twitter mr-1"> <i class="fab fa-twitter"></i> <span class="sr-only">Twitter</span> </a>
+            {% comment %}
             <a href="#" class="btn btn-outline-light btn-rounded btn-icon btn-lg border-w-2 branding-facebook mr-1"> <i class="fab fa-facebook-f"></i> <span class="sr-only">Facebook</span> </a>
             <a href="#" class="btn btn-outline-light btn-rounded btn-icon btn-lg border-w-2 branding-linkedin mr-1"> <i class="fab fa-instagram"></i> <span class="sr-only">Instagram</span> </a>
             <a href="#" class="btn btn-outline-light btn-rounded btn-icon btn-lg border-w-2 branding-google-plus mr-1"> <i class="fab fa-pinterest-p"></i> <span class="sr-only">Pinterest</span> </a>
+            {% endcomment %}
           </div>
         </div>
       </div>
@@ -463,7 +500,7 @@
     <!--@todo: replace with company copyright details-->
     <div class="bg-inverse-dark text-sm py-3 container">
       <p class="mb-0 text-sm">
-        Copyright 2019 &copy; AppStrap
+        Copyright 2019 &copy; BabyAsst.com
         <br /> Site template by <a href="https://wrapbootstrap.com/theme/appstrap-responsive-website-template-WB0C6D0H4?ref=tme" class="footer-link">AppStrap</a>
       </p>
       <a href="#top" class="btn btn-icon btn-dark pos-fixed pos-b pos-r mr-3 mb-3 scroll-state-hidden" title="Back to top" data-scroll="scroll-state"><i class="fa fa-chevron-up"></i></a>
