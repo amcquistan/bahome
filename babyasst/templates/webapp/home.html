@@ -1,0 +1,502 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home | BabyAsst.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- @todo: fill with your company info or remove -->
+  <meta name="description" content="Simplify life by recording baby's needs and activities opening the doors to reduced stress and guess work">
+
+  <!-- Bootstrap v4.3.1 CSS via CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+  <link rel="stylesheet" href="{% static 'assets/plugins/plugin-css/plugin-sticky-classes.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/plugins/plugin-css/plugin-owl-carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/plugins/plugin-css/plugin-offcanvas.min.css' %}">
+
+  <!-- Theme style -->
+  <link href="{% static 'assets/css/theme-style.min.css' %}" rel="stylesheet">
+
+  <!-- Pink colour scheme -->
+  <link href="{% static 'assets/css/colour-slate.min.css' %}" rel="stylesheet">
+
+  <!--Your custom colour override-->
+  <link href="#" id="colour-scheme" rel="stylesheet">
+
+  <!-- Your custom override -->
+  <link href="{% static 'assets/css/custom-style.css' %}" rel="stylesheet">
+
+  <!-- Optional: ICON SETS -->
+  <!-- Iconset: Font Awesome 5.0.13 via CDN -->
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <!-- Iconset: flag icons - http://lipis.github.io/flag-icon-css/ -->
+  <link href="{% static 'assets/plugins/flag-icon-css/css/flag-icon.min.css' %}" rel="stylesheet">
+  <!-- Iconset: ionicons - http://ionicons.com/ -->
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <!-- Iconset: Linearicons - https://linearicons.com/free -->
+  <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+  <!-- Iconset: Lineawesome - https://icons8.com/articles/line-awesome -->
+  <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+
+
+  <!-- Le fav and touch icons - @todo: fill with your icons or remove, try https://realfavicongenerator.net -->
+  {% comment %}
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/manifest.json">
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+  {% endcomment %}
+  
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,700' rel='stylesheet' type='text/css'>
+
+  <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+</head>
+<!-- ======== @Region: body ======== -->
+
+<!-- ======== @Region: body ======== -->
+
+<body class=" page-index-app-landing navbar-layout-default" data-colour-scheme="pink" data-plugins-manual=true>
+
+  <!-- @plugin: page loading indicator, delete to remove loader -->
+  <div class="page-loader" data-toggle="page-loader"></div>
+
+  <a id="#top" href="#content" class="sr-only">Skip to content</a>
+
+  <!-- ======== @Region: #header ======== -->
+  <div id="header" class="bg-blue-dark">
+    <div data-toggle="sticky">
+
+      <!--Header & Branding region-->
+      <div class="header py-0 border-light border-op-1 header-transparent header-dark sticky-bg-blue-dark sticky-bg-op-9 sticky-border-op-1">
+        <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.html) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+        <div class="header-inner container">
+          <!--branding/logo -->
+          <div class="header-brand">
+            <a class="header-brand-text text-light" href="https://babyasst.com" title="Baby Asst Home">
+              <h2 class="h3 my-0 font-weight-normal">
+                <span class="font-weight-bold">Baby </span>Asst
+              </h2>
+            </a>
+          </div>
+          <!-- other header content -->
+          <div class="header-block order-12">
+
+            <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="off-canvas" = Off-cavnas Menu - data-toggle="overlay" = Overlay Menu -->
+            <a href="#top" class="btn btn-icon btn-white order-12 d-lg-none" data-toggle="off-canvas" data-target=".navbar-main" data-settings='{"cloneTarget":true, "targetClassExtras": "navbar-offcanvas"}'> <i class="fa fa-bars"></i> </a>
+          </div>
+
+          <div class="navbar navbar-expand-md navbar-static-top">
+            <!--everything within this div is collapsed on mobile-->
+            <div class="navbar-main collapse navbar-dark navbar-border-bottom-effect">
+              <!--main navigation-->
+              <ul class="nav navbar-nav container navbar-nav-stretch">
+                <li class="nav-item"></li>
+                <li class="nav-item">
+                  <a href="{% url 'about' %}" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="About">About</span> </a>
+                </li>
+                {% comment %}
+                <li class="nav-item">
+                  <a href="#" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="Features">Blog</span> </a>
+                </li>
+                {% endcomment %}
+                <li class="nav-item">
+                  <a href="https://app.babyasst.com/login/" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="Customers">Login</span> </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://app.babyasst.com/signup/" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="Sign Up">Sign Up</span> </a>
+                </li>
+              </ul>
+            </div>
+            <!--/.navbar-collapse -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== @Region: #highlighted ======== -->
+  <div id="highlighted" class="bg-blue-dark pos-md-relative d-flex" data-toggle="full-height" data-breakpoint="992">
+    <div class="container py-lg-6 text-center d-flex align-items-center" data-scroll="scrollax">
+      <div class="row align-items-lg-center">
+        <div class="col-lg-4 offset-lg-1 order-lg-2 p-5 p-lg-0">
+          <img src="{% static 'assets/img/index-app/screen-1.png' %}" alt="Phone screens" class="img-fluid" />
+        </div>
+        <div class="col-lg-6 order-lg-1 text-lg-center">
+          <h2 class="display-4 text-white mb-3">
+            Stop trying to remember everything! Use Baby Asst to record baby's activities.
+          </h2>
+          {% comment %}
+          <p class="mb-2">
+            <a href="#" class="w-45 w-lg-auto btn btn-outline-light text-xs pl-3 pr-4 py-2 btn-rounded border-w-2 text-hover-blue-dark mr-3"><i class="fab fa-apple mr-2 icon-2x align-middle" aria-hidden="true"></i> Get on iOS</a>
+            <a href="#" class="w-45 w-lg-auto btn btn-outline-light text-xs pl-3 pr-4 py-2 btn-rounded border-w-2 text-hover-blue-dark"><i class="fab fa-android mr-2 icon-2x align-middle" aria-hidden="true"></i> Get on Android</a>
+          </p>
+          <p class="text-xs text-white pl-2">
+            <a href="#features" class="text-light" data-toggle="scroll-link">view features</a>
+          </p>
+          {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END highlighted-->
+
+  <!-- ======== @Region: #content ======== -->
+  <div id="content" class="p-0 bg-white pos-relative pos-zindex-10">
+    <!-- Features -->
+    <div id="features" class="py-4 py-lg-7" data-animate="fadeIn">
+    <!-- <div id="features" class="container text-center bg-dark text-white bg-img-cover overlay overlay-op-6" data-bg-img="{% static 'assets/img/cam-in-a-bowl.jpg' %}"> -->
+      <div class="container text-center">
+        <div class="mt-1 pt-4 pb-8" data-bg-img="{% static 'assets/img/cam-in-a-bowl.jpg' %}">
+          <h2 class="text-light pb-5 mb-5">
+            What makes Baby Asst so awesome?
+          </h2>
+        </div>
+        
+        <div class="row mt-5">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-animate="fadeIn" data-animate-delay="0.1">
+            <i class="ion-ios-people-outline icon-3x icon-sq bg-light text-primary rounded-circle bg-shadow"></i>
+            <h4 class="mt-2 font-weight-light">
+              Accounts
+            </h4>
+            <p class="mb-0 text-xs px-4 px-lg-0">Flexible account management allowing you to add and remove family and care givers so you never miss a thing</p>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-animate="fadeIn" data-animate-delay="0.2">
+            <i class="ion-happy-outline icon-3x icon-sq bg-light text-primary rounded-circle bg-shadow"></i>
+            <h4 class="mt-2 font-weight-light">
+              Easy to Use
+            </h4>
+            <p class="mb-0 text-xs px-4 px-lg-0">Simple and intuitive design enables easy entry of all of baby's important actions and quick navigation with the bare minimum clicks required</p>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-animate="fadeIn" data-animate-delay="0.3">
+            <i class="ion-ios-moon-outline icon-3x icon-sq bg-light text-primary rounded-circle bg-shadow"></i>
+            <h4 class="mt-2 font-weight-light">
+              Minimal Nightglare
+            </h4>
+            <p class="mb-0 text-xs px-4 px-lg-0">Baby Asst's dark background and color schemes are meant to be gentle to sentive and tired eyes particularly in low light settings</p>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-animate="fadeIn" data-animate-delay="0.4">
+            <i class="ion-ios-lightbulb-outline icon-3x icon-sq bg-light text-primary rounded-circle bg-shadow"></i>
+            <h4 class="mt-2 font-weight-light">
+              Insightful
+            </h4>
+            <p class="mb-0 text-xs px-4 px-lg-0">As Baby Asst accumulates baby's actions and activities caregivers are presented with insightful trends and patterns specific to each child</p>
+          </div>
+        </div>
+        <!-- <img src="" alt="" class="img-fluid" data-animate="fadeIn" /> -->
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about" class="bg-primary bg-op-7 py-4 py-lg-6 border-primary border-w-4 border-op-5" data-animate="fadeIn">
+      <div class="container text-center text-white">
+        <h2 class="font-weight-light w-lg-50 mx-lg-auto mb-5">
+          Relax - Baby Asst has you covered!
+        </h2>
+        <p class="text-sm w-lg-70 mx-lg-auto">Baby Asst is here to assist parents and caregivers with simple yet detailed record keeping of baby's care activities in an intuitive, mobile 
+          friendly, web application built for minimal night glare. Overtime Baby Asst will help parents and invited caregivers learn baby's patterns and habits ultimately leading to better care and understanding of baby.</p>
+        <ul class="list-inline mb-5 w-lg-60 mx-lg-auto" data-animate="fadeIn">
+          <li class="list-inline-item m-2">
+            <i class="fa fa-check mr-2"></i>Baths
+          </li>
+          <li class="list-inline-item m-2">
+            <i class="fa fa-check mr-2"></i>Diaper Changes
+          </li>
+          <li class="list-inline-item m-2">
+            <i class="fa fa-check mr-2"></i>Feedings (Breast and Bottle)
+          </li>
+          <li class="list-inline-item m-2">
+            <i class="fa fa-check mr-2"></i>Sleep
+          </li>
+          <li class="list-inline-item m-2">
+            <i class="fa fa-check mr-2"></i>Timers
+          </li>
+          <li class="list-inline-item m-2">
+            <i class="fa fa-check mr-2"></i>Tummy Time
+          </li>
+          <li class="list-inline-item m-2">
+            <i class="fa fa-check mr-2"></i>Looks Great on Any Device
+          </li>
+        </ul>
+        <img src="{% static 'assets/img/index-app/screen-2.png' %}" alt="Phone screens" class="img-fluid" data-animate="fadeIn" />
+      </div>
+    </div>
+    {% comment %}
+    <!-- Customers -->
+    <div id="customers" class="py-4 py-lg-7" data-animate="fadeIn">
+      <div class="container">
+        <div class="w-lg-70 mx-lg-auto text-center">
+          <h2 class="font-weight-light">
+            People love AppStrap, here's what they say!
+          </h2>
+          <hr class="hr-primary w-10 mx-auto" />
+          <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate </p>
+        </div>
+        <!-- Testimonials carousel -->
+        <div class="app-carousel owl-equalheight owl-dots-center" data-animate="fadeIn" data-toggle="owl-carousel" data-owl-carousel-settings='{"margin":30, "responsive":{ "0":{"items":1}, "780":{"items":3, "nav":false}}, "loop":true }'>
+          <div class="card p-4 mt-5 rounded pos-relative overflow-visible">
+            <div class="app-carousel-avatar mt-5-neg mb-3">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" class="rounded-circle w-auto mx-auto border-light border-w-3" alt="Testimonial user">
+            </div>
+            <h4 class="font-weight-light text-brown text-center mb-0">
+              Alexander Vanjuvic
+            </h4>
+            <div class="text-primary text-center mb-3"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+            <p class="text-sm mb-0 op-8">Abigo Caecus Conventio Erat Laoreet Lucidus Macto Mauris Nulla Odio Probo Proprius Quae Sagaciter Scisco Sed Singularis Usitas Ut Utinam Vero Voco Vulputate</p>
+          </div>
+          <div class="card p-4 mt-5 rounded pos-relative overflow-visible">
+            <div class="app-carousel-avatar mt-5-neg mb-3">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/ashleyford/128.jpg" class="rounded-circle w-auto mx-auto border-light border-w-3" alt="Testimonial user">
+            </div>
+            <h4 class="font-weight-light text-brown text-center mb-0">
+              Alex Jones
+            </h4>
+            <div class="text-primary text-center mb-3"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+            <p class="text-sm mb-0 op-8">Abigo Adipiscing Aliquip Commodo Defui Elit Iusto Molior Nibh Odio Paratus Probo Quidne Saluto Si Te Utinam Valetudo Voco Vulpes Ymo</p>
+          </div>
+          <div class="card p-4 mt-5 rounded pos-relative overflow-visible">
+            <div class="app-carousel-avatar mt-5-neg mb-3">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" class="rounded-circle w-auto mx-auto border-light border-w-3" alt="Testimonial user">
+            </div>
+            <h4 class="font-weight-light text-brown text-center mb-0">
+              Kylie Michaels
+            </h4>
+            <div class="text-primary text-center mb-3"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+            <p class="text-sm mb-0 op-8">Accumsan Ad Adipiscing Augue Caecus Causa Conventio Cui Dolus Duis Ea Fere Feugiat Iriure Loquor Minim Nutus Obruo Odio Probo Ratis Sit Torqueo Tum Ut Uxor</p>
+          </div>
+          <div class="card p-4 mt-5 rounded pos-relative overflow-visible">
+            <div class="app-carousel-avatar mt-5-neg mb-3">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg" class="rounded-circle w-auto mx-auto border-light border-w-3" alt="Testimonial user">
+            </div>
+            <h4 class="font-weight-light text-brown text-center mb-0">
+              Tim Rice
+            </h4>
+            <div class="text-primary text-center mb-3"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+            <p class="text-sm mb-0 op-8">Aliquip Caecus Consequat Damnum Decet Duis Et Facilisi Genitus Hendrerit Humo Inhibeo Lobortis Loquor Magna Modo Natu Neo Nutus Odio Patria Premo Refero Singularis Ulciscor Ullamcorper Veniam Vereor</p>
+          </div>
+          <div class="card p-4 mt-5 rounded pos-relative overflow-visible">
+            <div class="app-carousel-avatar mt-5-neg mb-3">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jadlimcaco/128.jpg" class="rounded-circle w-auto mx-auto border-light border-w-3" alt="Testimonial user">
+            </div>
+            <h4 class="font-weight-light text-brown text-center mb-0">
+              Mike Thompson
+            </h4>
+            <div class="text-primary text-center mb-3"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+            <p class="text-sm mb-0 op-8">Abluo Antehabeo Capto Comis Et Facilisi Facilisis Feugiat Gemino Iaceo Importunus In Iriure Mos Obruo Pala Populus Praesent Quia Ratis Sagaciter Suscipere Ullamcorper Utinam Veniam Voco</p>
+          </div>
+          <div class="card p-4 mt-5 rounded pos-relative overflow-visible">
+            <div class="app-carousel-avatar mt-5-neg mb-3">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jina/128.jpg" class="rounded-circle w-auto mx-auto border-light border-w-3" alt="Testimonial user">
+            </div>
+            <h4 class="font-weight-light text-brown text-center mb-0">
+              Sara Mason
+            </h4>
+            <div class="text-primary text-center mb-3"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+            <p class="text-sm mb-0 op-8">Bene Elit Eu Facilisi Fere Hendrerit Ibidem Jumentum Lenis Natu Neo Nostrud Nulla Nunc Olim Plaga Proprius Ratis Sagaciter Secundum Tum Usitas Uxor Verto Ymo</p>
+          </div>
+        </div>
+        <!-- Client logos -->
+        <div class="row align-items-center text-center mt-5" data-animate="fadeIn">
+          <div class="col-sm-4 col-lg-2 mb-3">
+            <img src="{% static 'assets/img/customers/customer-1.png' %}" alt="Customer 1" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-3">
+            <img src="{% static 'assets/img/customers/customer-2.png' %}" alt="Customer 2" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-3">
+            <img src="{% static 'assets/img/customers/customer-3.png' %}" alt="Customer 3" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-3">
+            <img src="{% static 'assets/img/customers/customer-4.png' %}" alt="Customer 4" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-3">
+            <img src="{% static 'assets/img/customers/customer-5.png' %}" alt="Customer 5" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-3">
+            <img src="{% static 'assets/img/customers/customer-6.png' %}" alt="Customer 6" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endcomment %}
+    <!-- Pricing -->
+    <div id="sign-up" class="py-4 py-lg-7 bg-light" data-animate="fadeIn">
+      <div class="container text-center">
+        <h2 class="font-weight-light w-lg-70 mx-lg-auto mb-5">
+          Baby Asst offers flexible pricing for it's service
+        </h2>
+        <div class="row align-items-lg-center mt-4" data-animate="fadeIn">
+          <!-- Plan 1 -->
+          <div class="col-lg-6 py-md-6 mb-3 mb-md-0">
+            <div class="card bg-shadow mb-0 rounded clickable-element">
+              <div class="bg-primary bg-op-7 text-white card-body-overlap py-5">
+                <h3 class="my-0">
+                  Basic
+                </h3>
+                <h4 class="font-weight-light">
+                  Free forever
+                </h4>
+              </div>
+              <div class="card-body px-5 py-4">
+                <ul class="list-unstyled text-xs text-left text-faded">
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> 1 account member (just you)</li>
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> 1 child</li>
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> 10 timers</li>
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> unlimited activity logging</li>
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> unlimited reporting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Plan 2 -->
+          <div class="col-lg-6 py-md-6 mb-3 mb-md-0">
+            <div class="card bg-shadow mb-0 rounded clickable-element">
+              <div class="bg-primary bg-op-7 text-white card-body-overlap py-5">
+                <h3 class="my-0">
+                  Premium
+                </h3>
+                <h4 class="font-weight-light">
+                  $2.00 / month
+                </h4>
+              </div>
+              <div class="card-body px-5 py-4">
+                <ul class="list-unstyled text-xs text-left text-faded">
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> 3 account members (including you)</li>
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> $1 / month per additional member</li>
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> 2 children</li>
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> $1 / month per additional child</li>
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> unlimited timers</li>
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> unlimited activity logging</li>
+                  <li class="p-2"><i class="text-primary ion-checkmark mr-2"></i> unlimited reporting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+    </div>
+  </div>
+  <!-- #Content -->
+
+  <!-- ======== @Region: #footer ======== -->
+  <footer id="footer" class="p-3 py-lg-8 bg-blue-dark" data-animate="fadeIn">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="mr-2">
+            <h5 class="text-uppercase text-white">
+              Pages
+            </h5>
+            <ul class="list-unstyled text-sm">
+              <li> <a href="{% url 'about' %}" class="text-white op-6 py-1 d-inline-block">About</a> </li>
+              {% comment %}<li> <a href="" class="text-white op-6 py-1 d-inline-block">Blog</a> </li>{% endcomment %}
+              <li> <a href="https://app.babyasst.com/login/" class="text-white op-6 py-1 d-inline-block">Login</a> </li>
+              <li> <a href="https://app.babyasst.com/signup/" class="text-white op-6 py-1 d-inline-block">Signup</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="mr-2">
+            <h5 class="text-uppercase text-white">
+              Resources
+            </h5>
+            <ul class="list-unstyled text-sm">
+              {% comment %}
+              <li> <a href="" class="text-white op-6 py-1 d-inline-block">Parenting Products</a> </li>
+              <li> <a href="" class="text-white op-6 py-1 d-inline-block">Tips & Tricks</a> </li>
+              {% endcomment %}
+              <li> <a href="{% url 'tos' %}" class="text-white op-6 py-1 d-inline-block">Terms of Service</a> </li>
+              <li> <a href="{% url 'privacy' %}" class="text-white op-6 py-1 d-inline-block">Privacy Policy</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="mr-2">
+            <h5 class="text-uppercase text-white">
+              Support
+            </h5>
+            <ul class="list-unstyled text-sm">
+              <li> <a href="" class="text-white op-6 py-1 d-inline-block">Video Tutorials</a> </li>
+              <li> <a href="" class="text-white op-6 py-1 d-inline-block">FAQs</a> </li>
+              <li> <a href="" class="text-white op-6 py-1 d-inline-block">Contact Us</a> </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4">
+          <h5 class="text-uppercase text-white">
+            Keep in touch with us
+          </h5>
+          <!--@todo: replace with mailchimp code-->
+          <form class="form-inline bg-white form-control-rounded p-1 pos-relative justify-content-between">
+            <div class="form-group mb-0">
+              <input type="email" class="form-control form-control-rounded border-0 form-control-transparent py-2 px-3 text-faded" placeholder="Monthly newsletter">
+            </div>
+            <button type="submit" class="btn btn-primary btn-rounded py-2 px-3 font-weight-bold text-uppercase"> Subscribe </button>
+          </form>
+          <div class="mt-4">
+            <a href="#" class="btn btn-outline-light btn-rounded btn-icon btn-lg border-w-2 branding-twitter mr-1"> <i class="fab fa-twitter"></i> <span class="sr-only">Twitter</span> </a>
+            <a href="#" class="btn btn-outline-light btn-rounded btn-icon btn-lg border-w-2 branding-facebook mr-1"> <i class="fab fa-facebook-f"></i> <span class="sr-only">Facebook</span> </a>
+            <a href="#" class="btn btn-outline-light btn-rounded btn-icon btn-lg border-w-2 branding-linkedin mr-1"> <i class="fab fa-instagram"></i> <span class="sr-only">Instagram</span> </a>
+            <a href="#" class="btn btn-outline-light btn-rounded btn-icon btn-lg border-w-2 branding-google-plus mr-1"> <i class="fab fa-pinterest-p"></i> <span class="sr-only">Pinterest</span> </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--@todo: replace with company copyright details-->
+    <div class="bg-inverse-dark text-sm py-3 container">
+      <p class="mb-0 text-sm">
+        Copyright 2019 &copy; AppStrap
+        <br /> Site template by <a href="https://wrapbootstrap.com/theme/appstrap-responsive-website-template-WB0C6D0H4?ref=tme" class="footer-link">AppStrap</a>
+      </p>
+      <a href="#top" class="btn btn-icon btn-dark pos-fixed pos-b pos-r mr-3 mb-3 scroll-state-hidden" title="Back to top" data-scroll="scroll-state"><i class="fa fa-chevron-up"></i></a>
+    </div>
+  </footer>
+
+  <!--Hidden elements - excluded from jPanel Menu on mobile-->
+  <div class="hidden-elements js-off-canvas-exclude"></div>
+
+  <!--jQuery 3.3.1 via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper 1.14.6 via CDN, needed for Bootstrap Tooltips & Popovers -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+  <!-- Bootstrap v4.3.1 JS via CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->
+  <!-- <script src="{% static 'assets/js/src/plugins/fixTo.js' %}"></script> -->
+  <script src="{% static 'assets/plugins/fakeLoader/fakeLoader.min.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+
+  <!--  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fixto/0.5.0/fixto.js"></script>
+  <script src="https://unpkg.com/js-offcanvas@1.2.8/dist/_js/js-offcanvas.pkgd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+  <!--Custom scripts & AppStrap API integration -->
+  <script src="{% static 'assets/js/custom-script.js' %}"></script>
+  <!--AppStrap scripts mainly used to trigger libraries/plugins -->
+  <script src="{% static 'assets/js/script.min.js' %}"></script>
+</body>
+
+</html>
