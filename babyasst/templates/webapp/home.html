@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="{% static 'assets/plugins/plugin-css/plugin-sticky-classes.min.css' %}">
   <link rel="stylesheet" href="{% static 'assets/plugins/plugin-css/plugin-owl-carousel.min.css' %}">
   <link rel="stylesheet" href="{% static 'assets/plugins/plugin-css/plugin-offcanvas.min.css' %}">
+  <link rel="stylesheet" href="https://unpkg.com/js-offcanvas@1.2.8/dist/_css/prefixed/js-offcanvas.css">
 
   <!-- Theme style -->
   <link href="{% static 'assets/css/theme-style.min.css' %}" rel="stylesheet">
@@ -114,11 +115,11 @@
                 </li>
                 {% comment %}
                 <li class="nav-item">
-                  <a href="#" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="Features">Blog</span> </a>
+                  <a href="#" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="Blog">Blog</span> </a>
                 </li>
                 {% endcomment %}
                 <li class="nav-item">
-                  <a href="https://app.babyasst.com/login/" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="Customers">Login</span> </a>
+                  <a href="https://app.babyasst.com/login/" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="Login">Login</span> </a>
                 </li>
                 <li class="nav-item">
                   <a href="https://app.babyasst.com/signup/" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link"> <span class="nav-link-inner" data-title="Sign Up">Sign Up</span> </a>
@@ -520,15 +521,16 @@
 
 
   <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->
-  <!-- <script src="{% static 'assets/js/src/plugins/fixTo.js' %}"></script> -->
+  <!-- <script src="https://cdnfjs.cloudflare.com/ajax/libs/fixto/0.5.0/fixto.js"></script> -->
   <script src="{% static 'assets/plugins/fakeLoader/fakeLoader.min.js' %}"></script>
-  <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script> -->
 
   <!--  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fixto/0.5.0/fixto.js"></script>
   <script src="https://unpkg.com/js-offcanvas@1.2.8/dist/_js/js-offcanvas.pkgd.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
 
   <!--Custom scripts & AppStrap API integration -->
   <script src="{% static 'assets/js/custom-script.js' %}"></script>

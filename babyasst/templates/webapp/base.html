@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+  <link rel="stylesheet" href="{% static 'assets/plugins/plugin-css/plugin-sticky-classes.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/plugins/plugin-css/plugin-owl-carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/plugins/plugin-css/plugin-offcanvas.min.css' %}">
+  <link rel="stylesheet" href="https://unpkg.com/js-offcanvas@1.2.8/dist/_css/prefixed/js-offcanvas.css">
 
   <!-- Theme style -->
   <link href="{% static 'assets/css/theme-style.min.css' %}" rel="stylesheet">
@@ -36,7 +40,6 @@
   <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
   <!-- Iconset: Lineawesome - https://icons8.com/articles/line-awesome -->
   <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
-
 
   <!-- Le fav and touch icons - @todo: fill with your icons or remove, try https://realfavicongenerator.net -->
   {% comment %}
@@ -83,6 +86,7 @@
             <a class="nav-link text-xs text-uppercase d-none d-md-block" href="https://app.babyasst.com/signup/">Sign Up</a>
           </nav>
         </div>
+
         <!--social media icons-->
         <div class="nav nav-icons header-block order-12">
           <!--@todo: replace with company social media details-->
@@ -108,6 +112,13 @@
                 <span class="header-brand-text-alt">Baby</span>Asst<span class="header-brand-text-alt">.</span>
               </h1>
             </a>
+          </div>
+
+          <!-- other header content -->
+          <div class="header-block order-12">
+
+            <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="off-canvas" = Off-cavnas Menu - data-toggle="overlay" = Overlay Menu -->
+            <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none" data-toggle="off-canvas" data-target=".navbar-main" data-settings='{"cloneTarget":true, "targetClassExtras": "navbar-offcanvas"}'> <i class="fa fa-bars"></i> </a>
           </div>
 
           <div class="navbar navbar-expand-md navbar-static-top">
@@ -222,6 +233,11 @@
 
   <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->
   <script src="{% static 'assets/plugins/fakeLoader/fakeLoader.min.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fixto/0.5.0/fixto.js"></script>
+  <script src="https://unpkg.com/js-offcanvas@1.2.8/dist/_js/js-offcanvas.pkgd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
 
   <!--Custom scripts & AppStrap API integration -->
   <script src="{% static 'assets/js/custom-script.js' %}"></script>
