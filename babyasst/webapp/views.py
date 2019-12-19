@@ -7,11 +7,6 @@ from django.shortcuts import render, redirect, reverse
 
 from django.views import View
 
-from blog.models import BlogPost
-
-from .models import Category, Tag
-
-
 robots = """
 User-agent: *
 Allow: /
@@ -28,21 +23,12 @@ class RobotsView(View):
 
 class SiteMapView(View):
     def get(self, request):
-        posts = BlogPost.objects.filter(publish_at__lte=datetime.today()).all()
 
         pages = [
-          f"<url><loc>{DOMAIN_NAME}{reverse('home')}</loc><lastmod>2019-06-09</lastmod><changefreq>monthly</changefreq></url>",
-          f"<url><loc>{DOMAIN_NAME}{reverse('about')}</loc><lastmod>2019-06-09</lastmod><changefreq>monthly</changefreq></url>",
-          f"<url><loc>{DOMAIN_NAME}{reverse('blog:posts')}</loc><lastmod>2019-06-09</lastmod><changefreq>monthly</changefreq></url>"
+          f"<url><loc>{DOMAIN_NAME}{reverse('home')}</loc><lastmod>2019-11-10</lastmod><changefreq>monthly</changefreq></url>",
+          f"<url><loc>{DOMAIN_NAME}{reverse('about')}</loc><lastmod>2019-11-10</lastmod><changefreq>monthly</changefreq></url>",
+          f"<url><loc>{DOMAIN_NAME}{reverse('video_tuts')}</loc><lastmod>2019-11-10</lastmod><changefreq>monthly</changefreq></url>",
         ]
-
-        for post in posts:
-            pages.append(f"""
-            <url>
-              <loc>{DOMAIN_NAME}{reverse('blog:post', args=(post.url_slug, ))}</loc>
-              <lastmod>{post.publish_at.strftime('%Y-%m-%d')}</lastmod>
-              <changefreq>monthly</changefreq>
-            </url>""")
         
         urls = '\n'.join(pages)
         site_map = f"""<?xml version="1.0" encoding="UTF-8"?>
