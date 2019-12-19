@@ -90,9 +90,10 @@
         <!--social media icons-->
         <div class="nav nav-icons header-block order-12">
           <!--@todo: replace with company social media details-->
+          <a href="#" class="nav-link"> <i class="fab fa-facebook-square icon-1x"></i> <span class="sr-only">Facebook</span> </a>
           {% comment %}
           <a href="#" class="nav-link"> <i class="fab fa-twitter-square icon-1x"></i> <span class="sr-only">Twitter</span> </a>
-          <a href="#" class="nav-link"> <i class="fab fa-facebook-square icon-1x"></i> <span class="sr-only">Facebook</span> </a>
+          
           <a href="#" class="nav-link"> <i class="fab fa-linkedin icon-1x"></i> <span class="sr-only">Linkedin</span> </a>
           <a href="#" class="nav-link"> <i class="fab fa-google-plus-square icon-1x"></i> <span class="sr-only">Google plus</span> </a>
           {% endcomment %}
@@ -130,9 +131,13 @@
                 <li class="nav-item">
                   <a href="{% url 'home' %}" class="nav-link"> <i class="fa fa-home nav-link-icon"></i> <span class="d-none">Home</span> </a>
                 </li>
-
+                
                 <li class="nav-item active">
                   <a href="{% url 'about' %}" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item active">
+                  <a href="{% url 'video_tuts' %}" class="nav-link">Videos</a>
                 </li>
 
                 <li class="nav-item active">

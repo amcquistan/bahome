@@ -6,10 +6,69 @@
 {% block metadesc %}Video tutorials to help you get the most out of Baby Asst{% endblock %}
 
 {% block headertitle %}Video Tutorials{% endblock %}
-{% block headersubtitle %}Highlighting important features{% endblock %}
+{% block headersubtitle %}Explaining important features{% endblock %}
 
 {% block content %}
 
-<h4>Coming Soon.</h4>
+<div class="card-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+
+  <div class="card">
+    <h4 class="card-header py-0 px-0" role="tab" id="child-dashboard-heading">
+      <a data-toggle="collapse" data-parent="#accordion" href="#child-dashboard-collapse" aria-expanded="true" aria-controls="child-dashboard-collapse"> Child Dashboard Overview </a>
+    </h4>
+    <div id="child-dashboard-collapse" class="collapse show" role="tabpanel" aria-labelledby="child-dashboard-heading" data-parent="#accordion">
+      <div class="card-body text-center">
+        <iframe style="width:90%; height:350px;" src="https://www.youtube.com/embed/oZ4XRCqYUU4">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4 class="card-header py-0 px-0" role="tab" id="activities-heading">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#activities-collapse" aria-expanded="false" aria-controls="activities-collapse"> Saving, Viewing and, Editing Baby's Activities</a>
+    </h4>
+    <div id="activities-collapse" class="collapse" role="tabpanel" aria-labelledby="activities-heading" data-parent="#accordion">
+      <div class="card-body">
+          <iframe style="width:90%; height:350px;" src="https://www.youtube.com/embed/xy3y8zCb5M8">
+          </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4 class="card-header py-0 px-0" role="tab" id="timers-heading">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#timers-collapse" aria-expanded="false" aria-controls="timers-collapse"> Timers Simplify Sleep, Feeding, and Tummy Time Activities </a>
+    </h4>
+    <div id="timers-collapse" class="collapse" role="tabpanel" aria-labelledby="timers-heading" data-parent="#accordion">
+      <div class="card-body">
+        <h4>Coming Soon</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4 class="card-header py-0 px-0" role="tab" id="premium-upgrade-heading">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#premium-upgrade-collapse" aria-expanded="false" aria-controls="premium-upgrade-collapse"> Upgrading to Premium </a>
+    </h4>
+    <div id="premium-upgrade-collapse" class="collapse" role="tabpanel" aria-labelledby="premium-upgrade-heading" data-parent="#accordion">
+      <div class="card-body">
+        <h4>Coming Soon</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4 class="card-header py-0 px-0" role="tab" id="add-acct-members-heading">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#add-acct-members-collapse" aria-expanded="false" aria-controls="add-acct-members-collapse"> Adding Account Members </a>
+    </h4>
+    <div id="add-acct-members-collapse" class="collapse" role="tabpanel" aria-labelledby="add-acct-members-heading" data-parent="#accordion">
+      <div class="card-body">
+        <h4>Coming Soon</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 {% endblock %}
